@@ -1,0 +1,31 @@
+{
+  "background": {
+    "scripts": [ "resources/js/common.js", "resources/js/notifications.js", "resources/js/alarms.js", "resources/js/background.js" ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },
+    "default_popup": "resources/html/popup.html",
+    "default_title": "ProfiMonitor"
+  },
+  "content_security_policy": "script-src 'self' https://www.profimercadeo.com https://ssl.google-analytics.com; object-src 'self'",
+  "description": "ProfiMonitor version 0.1",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2,
+  "name": "ProfiMonitor",
+  "options_page": "resources/html/options.html",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage",
+    "http://*.uptimerobot.com/"
+  ],
+  "version": "1.1.0"
+}
